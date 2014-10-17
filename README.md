@@ -1,4 +1,4 @@
-AWS-nginx-flask-uwsgi-mysql-skeleton
-====================================
+linux-nginx-flask-uwsgi-mysql-skeleton
+======================================
 
-Skeleton for simple application with AWS-EC2-nginx-flask-uwsgi-mysql
+AWS EC2 setting//linux-nginx-flask-uwsgi-mysql skeleton
