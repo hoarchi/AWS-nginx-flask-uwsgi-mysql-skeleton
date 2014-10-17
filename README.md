@@ -84,7 +84,22 @@ def main():
 /venv/site-package 안에 설치됨
 
 13. mysql 설치
-http://samstarling.co.uk/2010/10/installing-mysql-on-an-ec2-micro-instance/
+sudo yum install mysql
+sudo yum install mysql-server
+sudo yum install mysql-devel
+sudo chgrp -R mysql /var/lib/mysql
+sudo chmod -R 770 /var/lib/mysql
+sudo service mysqld start
+
+/usr/bin/mysqladmin -u root password yourpasswordhere
+
+mysql> CREATE USER 'myuser'@'localhost' IDENTIFIED BY 
+    -> 'yourpasswordhere';
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'localhost'
+    -> WITH GRANT OPTION;
+mysql> CREATE USER 'myuser'@'%' IDENTIFIED BY 'yourpasswordhere';
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%'
+    -> WITH GRANT OPTION;
 
 mysql -u root -p
 show databases;
