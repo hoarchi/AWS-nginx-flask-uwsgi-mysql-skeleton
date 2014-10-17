@@ -51,7 +51,7 @@ mkdir logs
 로그 보기 vi logs/log.log
 마지막 10줄 보기tail logs/log.log
 
-6. 쉘 스크립트 화일 생성
+7. 쉘 스크립트 화일 생성
 vi mypid.pid (숫자뜨는지 확인)
 
 vi restart.sh
