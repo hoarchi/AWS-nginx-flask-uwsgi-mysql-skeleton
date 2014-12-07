@@ -6,5 +6,5 @@ class Config(object):
 class Production(Config):
 	debug = True
 	CSRF_ENABLED = False
-	SQLALCHEMY_DATABASE_URI = "mysql://username:password@000.000.000.000/DBname"
+	SQLALCHEMY_DATABASE_URI = "mysql://username:password@127.0.0.1/DBname"
 	migration_directory = "migrations"
