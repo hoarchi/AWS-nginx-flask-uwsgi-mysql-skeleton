@@ -84,9 +84,9 @@
 	     return 'HELLO Wolrd'
 
 #### (venv) pip install libraryname
-/venv/site-package 안에 설치됨
+libraryname will be installed in /venv/site-package
 
-#### mysql 설치
+#### install mysql
 	$ sudo yum install mysql
 	$ sudo yum install mysql-server
 	$ sudo yum install mysql-devel
